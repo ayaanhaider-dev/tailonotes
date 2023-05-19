@@ -5,26 +5,12 @@ import Search from './Search';
 import Header from './Header';
 import Footer from './Footer';
 const Home = () => {
+	const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
-			text: 'This is my first note!',
-			date: '15/05/2023',
-		},
-		{
-			id: nanoid(),
-			text: 'This is my second note!',
-			date: '15/05/2023',
-		},
-		{
-			id: nanoid(),
-			text: 'This is my third note!',
-			date: '15/05/2023',
-		},
-		{
-			id: nanoid(),
-			text: 'This is my new note!',
-			date: '15/05/2023',
+			text: 'Trial Notes',
+			date: '{date}',
 		},
 	]);
 
