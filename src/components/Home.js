@@ -5,18 +5,11 @@ import Search from './Search';
 import Header from './Header';
 import Footer from './Footer';
 const Home = () => {
-	const date = new Date();
-
-	let day = date.getDate();
-	let month = date.getMonth() + 1;
-	let year = date.getFullYear();
-	
-	let currentDate = `${day}-${month}-${year}`;
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
 			text: 'Trial Note',
-			date: '{ currentDate }',
+			date: '01/6/23',
 		},
 	]);
 
