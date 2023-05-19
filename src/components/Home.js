@@ -5,6 +5,7 @@ import Search from './Search';
 import Header from './Header';
 import Footer from './Footer';
 const Home = () => {
+	const current = new Date();
 	const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 	const [notes, setNotes] = useState([
 		{
