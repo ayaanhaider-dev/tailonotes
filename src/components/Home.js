@@ -8,7 +8,7 @@ const Home = () => {
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
-			text: 'Trial Note',
+			text: 'Remove this and add yours',
 			date: '01/6/23',
 		},
 	]);
